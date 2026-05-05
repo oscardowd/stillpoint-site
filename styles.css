@@ -1,0 +1,263 @@
+:root {
+  --bg: #07121f;
+  --panel: rgba(12, 26, 44, 0.78);
+  --panel-strong: rgba(9, 20, 34, 0.92);
+  --line: rgba(149, 193, 255, 0.18);
+  --text: #eef5ff;
+  --muted: #a9b8cc;
+  --accent: #7dc4ff;
+  --accent-strong: #9ce4d7;
+  --warm: #ffd37c;
+  --shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Avenir Next", "SF Pro Display", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(125, 196, 255, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(156, 228, 215, 0.12), transparent 24%),
+    linear-gradient(180deg, #0b1626 0%, var(--bg) 62%, #050d17 100%);
+}
+
+a {
+  color: inherit;
+}
+
+.shell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 72px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 22px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(10, 20, 34, 0.72);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.brand-mark {
+  width: 18px;
+  height: 26px;
+  border-radius: 50% 50% 60% 60%;
+  background: linear-gradient(180deg, var(--accent-strong), var(--accent));
+  box-shadow: 0 0 0 8px rgba(125, 196, 255, 0.08);
+  transform: rotate(12deg);
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.hero,
+.page-hero,
+.card,
+.content-card {
+  border: 1px solid var(--line);
+  border-radius: 32px;
+  background: linear-gradient(180deg, rgba(14, 30, 49, 0.9), rgba(7, 16, 28, 0.9));
+  box-shadow: var(--shadow);
+}
+
+.hero,
+.page-hero {
+  margin-top: 28px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after,
+.page-hero::after {
+  content: "";
+  position: absolute;
+  right: -110px;
+  top: -120px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(125, 196, 255, 0.36), rgba(125, 196, 255, 0));
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent-strong);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 34px;
+  height: 1px;
+  background: rgba(156, 228, 215, 0.55);
+}
+
+h1 {
+  margin: 18px 0 14px;
+  max-width: 11ch;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 0.96;
+  letter-spacing: -0.05em;
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: 1.55rem;
+  letter-spacing: -0.03em;
+}
+
+p,
+li {
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.hero-copy {
+  max-width: 680px;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.button,
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button {
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: #04111d;
+}
+
+.button-secondary {
+  border: 1px solid var(--line);
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.card,
+.content-card {
+  padding: 24px;
+}
+
+.card strong,
+.content-card strong {
+  color: var(--text);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.stack {
+  display: grid;
+  gap: 18px;
+}
+
+.list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.muted-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.footer {
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero,
+  .page-hero,
+  .card,
+  .content-card {
+    border-radius: 26px;
+  }
+
+  .content-grid,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero,
+  .page-hero {
+    padding: 28px 24px;
+  }
+}

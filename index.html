@@ -3,56 +3,254 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stillpoint</title>
-  <meta name="description" content="Stillpoint is an iPhone-first focus blocker built on Apple's Screen Time APIs.">
+  <title>Stillpoint | Block Distracting Apps and Sites on iPhone</title>
+  <meta name="description" content="Stillpoint is an iPhone focus blocker that helps you block distracting apps and websites, run weekly schedules, and build calmer screen habits.">
+  <meta name="apple-itunes-app" content="app-id=6763879455">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Stillpoint">
+  <meta property="og:title" content="Stillpoint | Block Distracting Apps and Sites on iPhone">
+  <meta property="og:description" content="Start focus blocks in seconds, plan your weak hours, and make distraction harder to reopen with Apple's Screen Time tools.">
+  <meta property="og:url" content="https://oscardowd.github.io/stillpoint-site/">
+  <meta property="og:image" content="https://oscardowd.github.io/stillpoint-site/assets/screenshots/home.jpg">
+  <meta property="og:image:alt" content="Stillpoint Home screen showing a focus block action and weekly stats.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Stillpoint | Block Distracting Apps and Sites on iPhone">
+  <meta name="twitter:description" content="An iPhone-first focus blocker for deep work, study, and calmer evenings.">
+  <meta name="twitter:image" content="https://oscardowd.github.io/stillpoint-site/assets/screenshots/home.jpg">
+  <link rel="canonical" href="https://oscardowd.github.io/stillpoint-site/">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Stillpoint",
+      "operatingSystem": "iOS 17.0 or later",
+      "applicationCategory": "ProductivityApplication",
+      "url": "https://oscardowd.github.io/stillpoint-site/",
+      "downloadUrl": "https://apps.apple.com/app/id6763879455",
+      "description": "Stillpoint is an iPhone focus blocker that helps you block distracting apps and websites, run weekly schedules, and make distraction harder to reopen.",
+      "featureList": [
+        "Manual focus sessions",
+        "Recurring weekly schedules",
+        "Website and app blocking with Apple Screen Time",
+        "Protection with Face ID, PIN, and uninstall friction",
+        "Weekly streak and focus-time tracking"
+      ],
+      "screenshot": [
+        "https://oscardowd.github.io/stillpoint-site/assets/screenshots/home.jpg",
+        "https://oscardowd.github.io/stillpoint-site/assets/screenshots/blocks.jpg",
+        "https://oscardowd.github.io/stillpoint-site/assets/screenshots/progress.jpg",
+        "https://oscardowd.github.io/stillpoint-site/assets/screenshots/protection.jpg"
+      ]
+    }
+  </script>
 </head>
 <body>
   <div class="shell">
     <nav class="nav">
       <a class="brand" href="./">
-        <span class="brand-mark" aria-hidden="true"></span>
+        <img class="brand-image" src="assets/brand/stillpoint-mark.png" alt="" width="28" height="28">
         <span>Stillpoint</span>
       </a>
       <div class="nav-links">
+        <a href="#screenshots">Screenshots</a>
         <a href="support/">Support</a>
         <a href="privacy/">Privacy</a>
         <a href="terms/">Terms</a>
-        <a href="https://github.com/oscardowd/stillpoint-site">GitHub</a>
+        <a href="https://github.com/oscardowd/stillpoint-site" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="nav-cta" href="https://apps.apple.com/app/id6763879455" target="_blank" rel="noreferrer">Download on iPhone</a>
       </div>
     </nav>
 
-    <section class="hero">
-      <div class="eyebrow">Focus Blocker for iPhone</div>
-      <div class="hero-copy">
-        <h1>Make distraction harder on purpose.</h1>
-        <p>Stillpoint helps you block the apps and sites that pull you off course, build stronger weekly routines, and keep your best hours protected with Apple Screen Time tooling.</p>
-        <div class="button-row">
-          <a class="button" href="support/">Get support</a>
-          <a class="button-secondary" href="privacy/">Read the privacy policy</a>
+    <section class="hero hero-home">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Focus blocker for iPhone</div>
+          <h1>Block distracting apps and sites before the scroll starts.</h1>
+          <p>Stillpoint helps you shut the door on the apps and websites that usually steal your best hours. Start one-tap focus blocks, plan risky time windows ahead of the week, and raise the friction on every easy escape route with Apple's Screen Time tools.</p>
+
+          <div class="hero-pills" aria-label="Stillpoint highlights">
+            <span class="pill">App and website blocking</span>
+            <span class="pill">Weekly schedules</span>
+            <span class="pill">Face ID and PIN protection</span>
+            <span class="pill">No ads or third-party trackers</span>
+          </div>
+
+          <div class="button-row">
+            <a class="button" href="https://apps.apple.com/app/id6763879455" target="_blank" rel="noreferrer">Open in the App Store</a>
+            <a class="button-secondary" href="#screenshots">See the screens</a>
+          </div>
+
+          <p class="hero-meta">Free download. Built for iPhone. No account required to start blocking.</p>
         </div>
+
+        <aside class="hero-aside">
+          <div class="device-card device-card-featured">
+            <img src="assets/screenshots/home.jpg" alt="Stillpoint Home screen with a focus action, streak, sessions, and minutes stats." loading="eager" decoding="async" width="722" height="1562">
+          </div>
+          <div class="proof-card">
+            <div class="muted-label">Best fit</div>
+            <h2>For study, deep work, and doomscroll-prone evenings.</h2>
+            <p>Stillpoint is strongest when you already know your weak points and want a calmer blocker that turns those hours into a routine instead of a repeated negotiation.</p>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section class="grid">
-      <article class="card">
-        <div class="muted-label">What it does</div>
-        <h2>Plan blocks that match your real weak points.</h2>
-        <p>Use manual focus sessions, recurring weekly schedules, stricter break rules, and custom shield screens to reduce impulsive app switching.</p>
-      </article>
-      <article class="card">
-        <div class="muted-label">What it avoids</div>
-        <h2>No ads, no analytics noise.</h2>
-        <p>Stillpoint is designed around local-first state, Apple-managed purchases, and optional Sign in with Apple. It is built to feel quieter than the apps it is trying to tame.</p>
-      </article>
-      <article class="card">
-        <div class="muted-label">Support</div>
-        <h2>Clear paths for help.</h2>
-        <p>Support guidance, privacy details, and product terms live here so the App Store listing has a stable public reference point.</p>
-      </article>
+    <section class="trust-strip" aria-label="Key product facts">
+      <div class="trust-item">
+        <span class="trust-kicker">Built on Apple</span>
+        <strong>Uses Screen Time APIs for system-level blocking.</strong>
+      </div>
+      <div class="trust-item">
+        <span class="trust-kicker">Local-first</span>
+        <strong>No ad SDKs and no custom analytics pipeline in the current release.</strong>
+      </div>
+      <div class="trust-item">
+        <span class="trust-kicker">Real momentum</span>
+        <strong>Track streaks, weekly focus time, and completed sessions.</strong>
+      </div>
     </section>
 
-    <p class="footer">Stillpoint public site. Support: <a href="support/">support page</a>. Source: <a href="https://github.com/oscardowd/stillpoint-site">github.com/oscardowd/stillpoint-site</a>.</p>
+    <section class="section-block">
+      <div class="section-heading">
+        <div class="eyebrow">How Stillpoint works</div>
+        <h2>Three layers of friction instead of one easy button.</h2>
+        <p>Most blockers fail because they only ask for a fresh burst of willpower. Stillpoint stacks quick starts, scheduled coverage, and stronger protection so the decision gets easier before the urge shows up.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="card feature-card">
+          <div class="muted-label">1. Start fast</div>
+          <h3>Launch a focus block in seconds.</h3>
+          <p>Pick your block list, choose a duration, and start immediately when you feel the drift starting.</p>
+        </article>
+        <article class="card feature-card">
+          <div class="muted-label">2. Plan ahead</div>
+          <h3>Cover the hours that usually slip.</h3>
+          <p>Build weekly schedules for work mornings, study windows, or evenings when scrolling normally wins.</p>
+        </article>
+        <article class="card feature-card">
+          <div class="muted-label">3. Lock the exits</div>
+          <h3>Make it harder to bail out mid-session.</h3>
+          <p>Use Face ID, PIN, Screen Time passcode guidance, and uninstall friction to close the obvious backdoors.</p>
+        </article>
+        <article class="card feature-card">
+          <div class="muted-label">4. See progress</div>
+          <h3>Know whether your setup is actually working.</h3>
+          <p>Watch streaks, weekly focus time, and completed sessions grow instead of guessing whether the blocker helped.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block" id="screenshots">
+      <div class="section-heading">
+        <div class="eyebrow">Screenshots</div>
+        <h2>What the app actually looks like on iPhone.</h2>
+        <p>The screenshot set mirrors the live product surfaces that matter for setup, scheduling, progress, and protection.</p>
+      </div>
+
+      <div class="showcase-grid">
+        <figure class="shot-card">
+            <img src="assets/screenshots/home.jpg" alt="Stillpoint Home screen showing a focus block action and weekly stats." decoding="async" width="722" height="1562">
+          <figcaption>
+            <span class="muted-label">Home</span>
+            <strong>Start a focus block in seconds.</strong>
+          </figcaption>
+        </figure>
+        <figure class="shot-card">
+            <img src="assets/screenshots/blocks.jpg" alt="Stillpoint Blocks screen showing a weekly schedule with a work block." decoding="async" width="722" height="1562">
+          <figcaption>
+            <span class="muted-label">Schedules</span>
+            <strong>Plan your focus week before the scroll starts.</strong>
+          </figcaption>
+        </figure>
+        <figure class="shot-card">
+            <img src="assets/screenshots/progress.jpg" alt="Stillpoint Progress screen showing weekly focus minutes and completed sessions." decoding="async" width="722" height="1562">
+          <figcaption>
+            <span class="muted-label">Progress</span>
+            <strong>Track streaks, minutes, and completed sessions.</strong>
+          </figcaption>
+        </figure>
+        <figure class="shot-card">
+            <img src="assets/screenshots/protection.jpg" alt="Stillpoint Settings screen showing Face ID, PIN, and protection options." decoding="async" width="722" height="1562">
+          <figcaption>
+            <span class="muted-label">Protection</span>
+            <strong>Lock the exits when the session gets hard.</strong>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="content-grid">
+        <article class="content-card">
+          <div class="muted-label">Why people keep it</div>
+          <h2>A stricter blocker without the ad-tech feel.</h2>
+          <p>Stillpoint is designed for people who want their phone to calm down, not for people who want another noisy productivity dashboard. The current release keeps state on-device, avoids third-party analytics SDKs, and uses Apple's own purchase and identity flows when you choose them.</p>
+          <ul class="list">
+            <li>Block distracting apps, categories, and websites.</li>
+            <li>Run both manual sessions and recurring schedules.</li>
+            <li>Use the free tier first, then unlock stronger protection later if needed.</li>
+          </ul>
+        </article>
+
+        <aside class="stack">
+          <article class="content-card">
+            <div class="muted-label">Requires</div>
+            <p>iPhone on iOS 17 or later, plus Apple's Screen Time / Family Controls permission for blocking and schedules.</p>
+          </article>
+          <article class="content-card">
+            <div class="muted-label">Good for</div>
+            <p>Deep work, revision blocks, evening phone spirals, and any other repeat distraction window you can predict.</p>
+          </article>
+          <article class="content-card">
+            <div class="muted-label">Support</div>
+            <p>Setup help, privacy details, and terms are all public so the product page can point somewhere stable.</p>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <div class="eyebrow">FAQ</div>
+        <h2>Questions people usually ask before they install.</h2>
+      </div>
+
+      <div class="faq-grid">
+        <article class="content-card faq-card">
+          <h3>Does Stillpoint block websites too?</h3>
+          <p>Yes. Stillpoint uses Apple's Screen Time tooling to block websites alongside apps and categories, including Safari weak points if you add them to the block list.</p>
+        </article>
+        <article class="content-card faq-card">
+          <h3>Do I need an account?</h3>
+          <p>No. You can complete onboarding, grant Screen Time access, and start blocking locally without creating an account.</p>
+        </article>
+        <article class="content-card faq-card">
+          <h3>Does it track me?</h3>
+          <p>The current release does not include third-party analytics SDKs, ads, or a custom remote telemetry pipeline. Read the full <a href="privacy/">privacy policy</a> for the current implementation boundary.</p>
+        </article>
+        <article class="content-card faq-card">
+          <h3>What happens after I download it?</h3>
+          <p>You choose what to block, grant Apple's Screen Time permission, and then Stillpoint can run focus sessions or weekly schedules on your iPhone.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div>
+        <div class="eyebrow">Ready to try it?</div>
+        <h2>Download Stillpoint and set up your first block.</h2>
+        <p>Start with the free download, configure one real weak point, and make your next drift window harder to reopen.</p>
+      </div>
+      <div class="button-row">
+        <a class="button" href="https://apps.apple.com/app/id6763879455" target="_blank" rel="noreferrer">Download from the App Store</a>
+        <a class="button-secondary" href="support/">Read setup help</a>
+      </div>
+    </section>
+
+    <p class="footer">Stillpoint public site. Download on the <a href="https://apps.apple.com/app/id6763879455" target="_blank" rel="noreferrer">App Store</a>. Need help? Start on the <a href="support/">support page</a>.</p>
   </div>
 </body>
 </html>
